@@ -64,12 +64,78 @@
                 color: red;
             }
         </style>
+        <!-- base tag
+            define the base url for the page
+            used to allow the users or developers to use relative url 
+            www.example.com/article
+            example of relative url 
+                /article
+        -->
+        <base href="www.indratraining.com">
+        <!-- meta tag 
+            SEO (search Engine Optimization)
+            no closing tag
+            performs very importants tasks
+        -->
+        <meta name="author" content="Aldous">
+        <meta name="description" content="Indra KL interns HTML & CSS Training">
+        <meta name="keywords" content="HTML, CSS, JavaScript">
+        <!-- <meta http-equiv="refresh" content="10"> -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8">
     </head> 
     <body>
-        <div id="div1" class="class-2">sample for inline styles</div>
+        <!-- <div id="div1" class="class-2">sample for inline styles</div>
         <div class="class-1">sample 2 for inline styles</div> 
         <div class="class-1">sample 3 for inline styles</div>
         <div class="class-2">sample 4 for inline styles</div>
+        <a href="/article">Article</a> -->
+
+        <!-- Document body -->
+        <!-- VISUAL ELEMENT TYPES
+            1. Block elements
+                - does not allow other block elements next to them
+                - can change width, height, margin, padding & border
+                - can contain other block elements but depends on the type of block elements (p does not allow it)
+                - can contain inline elements
+                - <p> <div> <h1> <h2> <h3> <h4> <h5> <h6> <ul> <ol> <li>
+            2. Inline elements
+                - allows other elements next to them
+                - cannot change width, height, margin, padding & border
+                - can be contained in block elements
+                - cannot contain block elements
+                - <a> <span> <img>
+        -->
+        <h1>BLOCK & INLINE ELEMENTS</h1>
+        <div class="class-1">
+            Parent Div
+            <div class="class-2">
+                Child Div
+                <span>Text 1</span>
+                <span>Text 2</span>
+                <div>Child of Child Div</div>
+            </div>
+            <div class="class-2">
+                Child Div 2
+            </div>
+        </div>
+        <hr>
+        <h2>Text tags</h2>
+        <p>This is a paragraph. This is a paragraph. This is a paragraph. <br> This is a paragraph. This is a paragraph. This is a paragraph. This is a paragraph.</p>
+        <span>Span tag</span>
+        Span tag
+        <br>
+        <h1>H1</h1>
+        <h2>H2</h2>
+        <h3>H3</h3>
+        <h4>H4</h4>
+        <h5>H5</h5>
+        <h6>H6</h6>
+        <strong>Strong text</strong>
+        <em>emphasized text</em>
+        <blockquote>Block Quote tag</blockquote>
+        <pre><code>console.log('Javascript Code shown using code tag');</code></pre>
+        <hr>
     </body>
     <footer></footer>
 </html>
