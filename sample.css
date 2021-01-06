@@ -1,3 +1,35 @@
 body {
     /* background: #ccc; */
 }
+
+header {
+    background-color: #464646;
+    color: #fff;
+    font-size: 16px;
+    height: 75px;
+}
+
+header > h2 {
+    display: inline-block;
+}
+
+header > nav {
+    display: inline-block;
+}
+
+nav {
+    padding: 10px;
+    color: #ccc;
+}
+
+nav > a {
+    display: inline-block;
+    color: #ccc;
+}
+
+footer {
+    padding: 50px 25px;
+    color: #464646;
+    background-color: #ccc;
+    font-size: 12px;
+}

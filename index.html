@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <!-- EMMET - helps developer to simply the coding by typing the tag name and assign a class or attributes right away -->
-<html> <!-- Means beginning of html document -->
-    <head> 
-        <!-- 
+<html>
+  <!-- Means beginning of html document -->
+  <head>
+    <!-- 
             no attributes
             no content
             container for other tags
@@ -14,85 +15,94 @@
                 base
                 meta
          -->
-         
-        <!-- title tag
+
+    <!-- title tag
             contains the title seen in browser tab
             used for SEO (Search Engine Optimization)
         -->
-        <title>
-            HTML & CSS Training
-        </title> 
-        <!-- script tag
+    <title>HTML & CSS Training</title>
+    <!-- script tag
             can contain a link to javascript file using "src" attribute
             can be an inline javascript code enclosed wiht <script></script>
             "defer" boolean attribute that tells the browser to put the script at the end of the page
         -->
-        <script defer src="sample.js"></script>
-        <script defer>
-            console.log('this is from the inline js code');
-        </script>
-        <!-- noscript tag
+    <script defer src="sample.js"></script>
+    <script defer>
+      console.log("this is from the inline js code");
+    </script>
+    <!-- noscript tag
             detect if browser disabled the scripts usage
             can contain the following tags:
                 link
                 style
                 meta
         -->
-        <noscript>Your browser does not support JavaScript!</noscript>
-        <!-- link tag 
+    <noscript>Your browser does not support JavaScript!</noscript>
+    <!-- link tag 
             set relationships docs & other resources
             no closing tag -- e.g <link>
             mainly used for linking an external stylesheet(css) to be loaded
         -->
-        <link rel="stylesheet" href="sample.css">
+    <link rel="stylesheet" href="sample.css" />
 
-        <!-- style tag 
+    <!-- style tag 
             can be used to add styles to document or page rather than loading an external stylesheet file (css)
         -->
-        <style>
-            #div1 {
-                font-size: 20px;
-            }
+    <style>
+      #div1 {
+        font-size: 20px;
+      }
 
-            .class-1 {
-                font-size: 10px;
-                color: blue;
-            }
+      .class-1 {
+        font-size: 10px;
+        color: blue;
+      }
 
-            .class-2 {
-                font-size: 15px;
-                color: red;
-            }
-        </style>
-        <!-- base tag
+      .class-2 {
+        font-size: 15px;
+        color: red;
+      }
+    </style>
+    <!-- base tag
             define the base url for the page
             used to allow the users or developers to use relative url 
             www.example.com/article
             example of relative url 
                 /article
         -->
-        <base href="www.indratraining.com">
-        <!-- meta tag 
+    <base href="www.indratraining.com" />
+    <!-- meta tag 
             SEO (search Engine Optimization)
             no closing tag
             performs very importants tasks
         -->
-        <meta name="author" content="Aldous">
-        <meta name="description" content="Indra KL interns HTML & CSS Training">
-        <meta name="keywords" content="HTML, CSS, JavaScript">
-        <!-- <meta http-equiv="refresh" content="10"> -->
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta charset="UTF-8">
-    </head> 
-    <body>
-        <!-- <div id="div1" class="class-2">sample for inline styles</div>
+    <meta name="author" content="Aldous" />
+    <meta name="description" content="Indra KL interns HTML & CSS Training" />
+    <meta name="keywords" content="HTML, CSS, JavaScript" />
+    <!-- <meta http-equiv="refresh" content="10"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8" />
+  </head>
+  <body>
+    <header>
+      <h2>Training</h2>
+      <!--NAV - creates a markup that defines the page navigation-->
+      <nav>
+        <a href="/home">Home</a>
+        <a href="/about">About</a>
+        <a href="/contact">Contact</a>
+      </nav>
+    </header>
+    <main>
+      this is the main
+      <!-- <div id="div1" class="class-2">sample for inline styles</div>
         <div class="class-1">sample 2 for inline styles</div> 
         <div class="class-1">sample 3 for inline styles</div>
         <div class="class-2">sample 4 for inline styles</div>
         <a href="/article">Article</a> -->
 
-        <!-- Document body -->
-        <!-- VISUAL ELEMENT TYPES
+      <!-- Document body -->
+      <!-- VISUAL ELEMENT TYPES
             1. Block elements
                 - does not allow other block elements next to them
                 - can change width, height, margin, padding & border
@@ -106,36 +116,89 @@
                 - cannot contain block elements
                 - <a> <span> <img>
         -->
-        <h1>BLOCK & INLINE ELEMENTS</h1>
-        <div class="class-1">
-            Parent Div
-            <div class="class-2">
-                Child Div
-                <span>Text 1</span>
-                <span>Text 2</span>
-                <div>Child of Child Div</div>
-            </div>
-            <div class="class-2">
-                Child Div 2
-            </div>
+      <h1>BLOCK & INLINE ELEMENTS</h1>
+      <div class="class-1">
+        Parent Div
+        <div class="class-2">
+          Child Div
+          <span>Text 1</span>
+          <span>Text 2</span>
+          <div>Child of Child Div</div>
         </div>
-        <hr>
-        <h2>Text tags</h2>
-        <p>This is a paragraph. This is a paragraph. This is a paragraph. <br> This is a paragraph. This is a paragraph. This is a paragraph. This is a paragraph.</p>
-        <span>Span tag</span>
-        Span tag
-        <br>
-        <h1>H1</h1>
-        <h2>H2</h2>
-        <h3>H3</h3>
-        <h4>H4</h4>
-        <h5>H5</h5>
-        <h6>H6</h6>
-        <strong>Strong text</strong>
-        <em>emphasized text</em>
-        <blockquote>Block Quote tag</blockquote>
-        <pre><code>console.log('Javascript Code shown using code tag');</code></pre>
-        <hr>
-    </body>
-    <footer></footer>
+        <div class="class-2">Child Div 2</div>
+      </div>
+      <hr />
+      <h2>Text tags</h2>
+      <p>
+        This is a paragraph. This is a paragraph. This is a paragraph. <br />
+        This is a paragraph. This is a paragraph. This is a paragraph. This is a
+        paragraph.
+      </p>
+      <span>Span tag</span>
+      Span tag
+      <br />
+      <h1>H1</h1>
+      <h2>H2</h2>
+      <h3>H3</h3>
+      <h4>H4</h4>
+      <h5>H5</h5>
+      <h6>H6</h6>
+      <strong>Strong text</strong>
+      <em>emphasized text</em>
+      <blockquote>Block Quote tag</blockquote>
+      <pre><code>console.log('Javascript Code shown using code tag');</code></pre>
+
+      <hr />
+      <h1>Lists</h1>
+      <!-- Unordered List & Ordered List -->
+      <h2>Unordered List</h2>
+      <ul>
+        <li>Unordered Item 1</li>
+        <li>Unordered Item 2</li>
+        <li>Unordered Item 3</li>
+      </ul>
+      <h2>Orderd List</h2>
+      <ol>
+        <li>Ordered Item 1</li>
+        <li>Ordered Item 2</li>
+        <li>Ordered Item 3</li>
+      </ol>
+
+      <hr />
+      <h1>Other Text Tags</h1>
+      <mark>mark</mark>
+      <ins>ins</ins>
+      <del>delete</del>
+      <sup>sup</sup>
+      <sub>sub</sub>
+      <small>small</small>
+      <i>italic</i>
+      <b>bold</b>
+
+      <hr />
+      <h1>Links</h1>
+      <a href="https://www.google.com" target="_blank"
+        >Click here to search on Google</a
+      >
+      <a href="/article">Click here to open the article</a>
+
+      <hr />
+      <h1>Container Tags & Page Structure</h1>
+      <article>
+        ARTICLE - Defines a thing that can be independent from other things in a
+        Page e.g blog post seldom used nowadays because of Front End libraries
+        Can be a main element page
+      </article>
+      <section>
+        SECTION - Represents a part of a doc has a heading tag then body
+        <aside>
+          Aside - signals that things in it or it contains are not part of the
+          regular flow of section it lives into adds a piece of content that's
+          related main content
+        </aside>
+      </section>
+      <div>DIV - generic & most common element</div>
+    </main>
+    <footer>Copyright 2021 All rights reserved</footer>
+  </body>
 </html>
