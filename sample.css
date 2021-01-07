@@ -33,3 +33,7 @@ footer {
     background-color: #ccc;
     font-size: 12px;
 }
+
+.form-controls > .form-sample > input {
+    display: block;
+}
