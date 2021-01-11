@@ -37,3 +37,11 @@ footer {
 .form-controls > .form-sample > input {
     display: block;
 }
+
+.sample-table > tr {
+    border: 1px solid #000;
+}
+
+.sample-table > td {
+    border: 1px solid #000;
+}

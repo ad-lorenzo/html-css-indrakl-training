@@ -231,30 +231,79 @@
            <input type="radio" name="fileType" value="AA"> <label>Word Document</label>
            <input type="radio" name="fileType" value="BB"> <label>Excel Sheet</label>
            <input type="radio" name="fileType" value="CC"> <label>Powerpoint</label>
-         </form>         
-      </div>
-      </div>
-      </div>
-      </div>
-      </div>
-      </div>
-      </div>
-      </div>
-      </div>
-      </div>
-      </div>
-      </div>
-      </div>
-      </div>
-      </div>
-      </div>
-      </div>
-      </div>
-      </div>
-      </div>
-      </div>
-      </div>
-      </div>
+           <h3>Checkbox</h3>
+           <input type="checkbox" name="techPositions" value="AA"> <label>Developer</label>
+           <input type="checkbox" name="techPositions" value="BB"> <label>Tester</label>
+           <input type="checkbox" name="techPositions" value="CC"> <label>UX Developer</label>
+           <h3>Date & Time</h3>
+           <input type="date" name="birthdate">
+           <input type="time" name="appointment">
+           <  input type="datetime-local" name="meetingSchedule">
+           <input type="week" name="workWeek">
+           <h3>Telephone</h3>
+           <!-- works on mobile to present the user a number keypad -->
+           <input type="tel" name="telephone">
+
+           <h3>Uncommon inputs</h3>
+           <input type="color" name="backgroundColor">
+           <input type="url" name="website" pattern="https://.*">
+           <input type="range" name="age" min="18" max="100">
+           <h3>Textarea</h3>
+           <textarea rows="20" cols="50"></textarea>
+           <h3>Dropdown or Select tag</h3>
+           <select name="OperatingSystems">
+             <option>Windows</option>
+             <option>Mac</option>
+             <option>Linux</option>
+             <optgroup label="Mobile OS">
+               <option>Android</option>
+               <option>iOS</option>
+             </optgroup>
+           </select>
+         </form>
+         <h1>Table</h1>
+         <table class="sample-table">
+           <tr>
+             <td>header 1</td>
+             <td>header 2</td>
+           </tr>
+           <tr>
+             <td>Content 1</td>
+             <td>Content 2</td>
+           </tr>
+         </table>
+         <h1>Table when used for alignment</h1>
+         <table>
+           <tr>
+             <td>Contact details</td>
+           </tr>
+           <tr>
+             <td>Given name</td>
+             <td>Last name</td>
+           </tr>
+           <tr>
+             <td><input type="text" placeholder="Given Name"></td>
+             <td><input type="text" placeholder="Last name"></td>
+           </tr>
+           <tr>
+            <td>Email</td>
+            <td>Gender</td>
+          </tr>
+          <tr>
+            <td><input type="text" placeholder="Email"></td>
+            <td>
+              <select name="OperatingSystems">
+                <option>Male</option>
+                <option>Female</option>
+              </select>
+            </td>
+          </tr>
+         </table>
+         <iframe width="760" height="500" src="https://www.youtube.com/embed/US2nfR9uT0A" 
+                 frameborder="0" 
+                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                 allowfullscreen></iframe>
+                 <img alt="image of a dog" src="https://picsum.photos/id/237/200/300" width="60" height="80">
       </div>
     </main>
     <footer>Copyright 2021 All rights reserved</footer>
