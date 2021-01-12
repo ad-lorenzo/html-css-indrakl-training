@@ -216,13 +216,15 @@
          } 
          regex (Regular Expression)
          <form class="form-sample">
-           <input name="text" type="text" placeholder="Input type text">
-           <input name="number" type="number" placeholder="Input type number">
-           <input name="email" type="email" placeholder="Input type email">
-           <input name="password" type="password" placeholder="Input type password">
-           <input name="hidden" type="hidden" placeholder="Input type hidden" value="">
-           <input name="file" type="file" placeholder="Input type file" accept=".jpg, .png, .docx">
-           <input name="button" type="button"  placeholder="Input type button" value="I am a button!">
+           <input tabindex="10" name="text" type="text" placeholder="Input type text">
+           <input tabindex="20" name="number" type="number" placeholder="Input type number">
+           <input tabindex="30" name="number" type="number" placeholder="Input type number">
+           <input tabindex="40" name="email" type="email" placeholder="Input type email">
+           <input tabindex="41" name="number" type="number" placeholder="Input type number">
+           <input tabindex="50" name="password" type="password" placeholder="Input type password">
+           <input tabindex="60" name="hidden" type="hidden" placeholder="Input type hidden" value="">
+           <input tabindex="70" name="file" type="file" placeholder="Input type file" accept=".jpg, .png, .docx">
+           <input tabindex="80" name="button" type="button"  placeholder="Input type button" value="I am a button!">
            <input name="reset" type="reset" placeholder="Input type reset" value="I am a reset button!">
            <h3>Gender</h3>
            <input type="radio" name="gender" value="1"> <label>Male</label>
@@ -232,7 +234,7 @@
            <input type="radio" name="fileType" value="BB"> <label>Excel Sheet</label>
            <input type="radio" name="fileType" value="CC"> <label>Powerpoint</label>
            <h3>Checkbox</h3>
-           <input type="checkbox" name="techPositions" value="AA"> <label>Developer</label>
+           <input tabindex="90" type="checkbox" name="techPositions" value="AA"> <label>Developer</label>
            <input type="checkbox" name="techPositions" value="BB"> <label>Tester</label>
            <input type="checkbox" name="techPositions" value="CC"> <label>UX Developer</label>
            <h3>Date & Time</h3>
@@ -305,6 +307,25 @@
                  allowfullscreen></iframe>
                  <img alt="image of a dog" src="https://picsum.photos/id/237/200/300" width="60" height="80">
       </div>
+      <h1>Accessibility</h1>
+      <!-- aria attributes
+        aria-label
+          use to define an element
+        aria-labelledby
+          to correlate two tags
+        aria-describedby
+          used to locate the description for the element it was given to
+        aria-hidden
+          to hide the element that doesn't add up a value to the experience of the person who can't see the page.
+      -->
+      <h2 arial-label="Header for accessibility samples section" id="header">Accessibility Samples</h2>
+      <p aria-labelledby="header" aria-describedby="description">Usage</p>
+      <p id="description">Readable sentence to demo the accessibility attributes</p>
+      
+      <p aria-labelledby="header" aria-describedby="dogDescription">Dog</p>
+      <p aria-labelledby="header" aria-describedby="dogDescription">Cat</p>
+      <p id="dogDescription">Furry four-legged animal</p>
+      <p aria-hidden="true">Furry four-legged animal 2</p>
     </main>
     <footer>Copyright 2021 All rights reserved</footer>
   </body>
