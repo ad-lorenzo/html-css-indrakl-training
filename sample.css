@@ -45,3 +45,42 @@ footer {
 .sample-table > td {
     border: 1px solid #000;
 }
+
+.focus-sample:focus {
+    border: green dashed 2px;
+}
+
+
+li:nth-child(3)  {
+    color: blue;
+}
+
+li:not(.li-class) {
+    font-size: 35px;
+}
+
+.not-sample > *:not(span) {
+    font-size: 20px;
+}
+
+.only-child-sample:only-child {
+    color: red;
+    font-size: 40px;
+}
+
+.not-sample::before {
+    content: "before";
+    color: red;
+}
+
+.not-sample::after {
+    content: "after";
+    padding: 10px;
+    color: #1DA1F2;
+}
+
+.vh-vw {
+    background-color: #1DA1F2;
+    width: 50vw;
+    height: 50vh;
+}

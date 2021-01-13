@@ -1,0 +1,60 @@
+/*
+    CSS
+        semi-colon is a must
+        
+    To add css to website
+        1. <link>
+        2. <style>
+        3. inline styles
+    
+    Selectors
+        1. element selector examples p {...} table{...}
+        2. class selector example .camelCaseClass{...} .kebab-case-class{...}
+        3. id selector example #PascalCase{...}
+
+    Combining Selectors
+        1. Element + class example p.camelCaseClass
+        2. Element + id example p#PascalCase
+
+    Grouping selector
+        1. p, .camelCaseClass, #PascalCase { font-size: 20px; }
+
+    Document Tree
+        - chaining different elements that are related as parent-child-child-...
+        .class-1 > .class-2 > span { color: blue; }
+        - Adjacent selector
+            h1 + h2 { color: green; }
+    
+    Inheritance
+        - inherits 
+        - forcing the element to inherit a property
+        - to prevent inherit we can use 'revert' keyword
+
+    @import 
+        - imports another css
+    
+    Pseudo-class
+        :active - input:active { color: red; }
+        :hover - 
+        :first-child
+        :not()
+        :nth-child(4)
+        :only-child
+        :visited
+        :valid
+        :focus
+        ::before
+        ::after
+
+    color
+        hexadecimal #000 #FFF #ccc
+        text 
+        RGB
+    Units
+        px - pixels
+        em
+        rem
+        %
+        vh - view height
+        vw - view width
+*/
