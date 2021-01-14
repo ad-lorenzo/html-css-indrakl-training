@@ -57,4 +57,52 @@
         %
         vh - view height
         vw - view width
+
+    url
+        {
+            background: url('https://picsum.photos/id/237/200/300');
+        }
+    
+    calc
+        - calculates values for example padding, width, height and anything that's numeric value
+    
+    line-height
+        - sets a height for each line within the element with line-height property;
+    
+    padding
+        - space surrounding the element from the inside
+
+    margin
+        - space surrounding the element from the outside
+
+    display
+        - defines how the element should be shown to user
+    
+    position
+        - where you want the element to show up
+    
+    border
+        - line surrounds the element
+    
+    float 
+        - forces your element to move left or right
+
+    z-index
+        - put your element on top 
+    
+    box-sizing
+        - border-box
+            - calculates the width and height including the padding & border;
+                example
+                    width: 100px;
+                    padding: 0 24px;
+                    border: 1px #000 solid;
+                    without box-sizing: border-box;
+                        width of element will be 100 + 24(left) + 24(right) + 1 = 149px;
+                    with box-sizing: border-box;
+                        width of element will be 100px; 100px = 24px + 1px + the remaining width (75px);                     
 */
+
+body {
+    max-width: calc(80% - 100px);
+}
