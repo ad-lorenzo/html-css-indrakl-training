@@ -153,9 +153,9 @@
       <!-- Unordered List & Ordered List -->
       <h2>Unordered List</h2>
       <ul>
-        <li>Unordered Item 1</li>
-        <li>Unordered Item 2</li>
-        <li>Unordered Item 3</li>
+        <li class="li-class">Unordered Item 1</li>
+        <li class="li-class">Unordered Item 2</li>
+        <li class="li-class">Unordered Item 3</li>
       </ul>
       <h2>Orderd List</h2>
       <ol>
@@ -163,6 +163,15 @@
         <li>Ordered Item 2</li>
         <li>Ordered Item 3</li>
       </ol>
+
+      <div class="not-sample">
+        <span>Sample text</span>
+        <span>Sample text</span>
+        <div>Sample text</div>
+        <span>Sample text</span>
+        <span>Sample text</span>
+        <span>Sample text</span>
+      </div>
 
       <hr />
       <h1>Other Text Tags</h1>
@@ -174,6 +183,10 @@
       <small>small</small>
       <i>italic</i>
       <b>bold</b>
+
+      <div>
+        <span class="only-child-sample">QWERTY</span>
+      </div>
 
       <hr />
       <h1>Links</h1>
@@ -197,7 +210,140 @@
           related main content
         </aside>
       </section>
-      <div>DIV - generic & most common element</div>
+      <div class="vh-vw">DIV - generic & most common element</div>
+      
+      <div class="pad-mar-div">
+        <div class="pad-mar-div-child">Div 1</div>
+        <div class="pad-mar-div-child">Div 2</div>
+      </div>
+
+      <h1>Forms Controls</h1>
+      <div class="form-controls">
+        <!-- 
+          The controls that allows user to interact with the page
+          contains with set of controls and submit button
+          Submit Button - is a control to submit your forms to the server.
+                        - by default it refreshes the page but can be altered by JavaScript
+          Submitted by GET/POST method
+          <form method="POST"></form>
+         -->
+         {
+           textSample: string;
+           number: number;
+           email: string;
+         } 
+         regex (Regular Expression)
+         <form class="form-sample">
+           <input class="focus-sample" tabindex="10" name="text" type="text" placeholder="Input type text">
+           <input tabindex="20" name="number" type="number" placeholder="Input type number">
+           <input tabindex="30" name="number" type="number" placeholder="Input type number">
+           <input tabindex="40" name="email" type="email" placeholder="Input type email">
+           <input tabindex="41" name="number" type="number" placeholder="Input type number">
+           <input tabindex="50" name="password" type="password" placeholder="Input type password">
+           <input tabindex="60" name="hidden" type="hidden" placeholder="Input type hidden" value="">
+           <input tabindex="70" name="file" type="file" placeholder="Input type file" accept=".jpg, .png, .docx">
+           <input tabindex="80" name="button" type="button"  placeholder="Input type button" value="I am a button!">
+           <input name="reset" type="reset" placeholder="Input type reset" value="I am a reset button!">
+           <h3>Gender</h3>
+           <input type="radio" name="gender" value="1"> <label>Male</label>
+           <input type="radio" name="gender" value="2"> <label>Female</label>
+           <h3>File Type</h3>
+           <input type="radio" name="fileType" value="AA"> <label>Word Document</label>
+           <input type="radio" name="fileType" value="BB"> <label>Excel Sheet</label>
+           <input type="radio" name="fileType" value="CC"> <label>Powerpoint</label>
+           <h3>Checkbox</h3>
+           <input tabindex="90" type="checkbox" name="techPositions" value="AA"> <label>Developer</label>
+           <input type="checkbox" name="techPositions" value="BB"> <label>Tester</label>
+           <input type="checkbox" name="techPositions" value="CC"> <label>UX Developer</label>
+           <h3>Date & Time</h3>
+           <input type="date" name="birthdate">
+           <input type="time" name="appointment">
+           <  input type="datetime-local" name="meetingSchedule">
+           <input type="week" name="workWeek">
+           <h3>Telephone</h3>
+           <!-- works on mobile to present the user a number keypad -->
+           <input type="tel" name="telephone">
+
+           <h3>Uncommon inputs</h3>
+           <input type="color" name="backgroundColor">
+           <input type="url" name="website" pattern="https://.*">
+           <input type="range" name="age" min="18" max="100">
+           <h3>Textarea</h3>
+           <textarea rows="20" cols="50"></textarea>
+           <h3>Dropdown or Select tag</h3>
+           <select name="OperatingSystems">
+             <option>Windows</option>
+             <option>Mac</option>
+             <option>Linux</option>
+             <optgroup label="Mobile OS">
+               <option>Android</option>
+               <option>iOS</option>
+             </optgroup>
+           </select>
+         </form>
+         <h1>Table</h1>
+         <table class="sample-table">
+           <tr>
+             <td>header 1</td>
+             <td>header 2</td>
+           </tr>
+           <tr>
+             <td>Content 1</td>
+             <td>Content 2</td>
+           </tr>
+         </table>
+         <h1>Table when used for alignment</h1>
+         <table>
+           <tr>
+             <td>Contact details</td>
+           </tr>
+           <tr>
+             <td>Given name</td>
+             <td>Last name</td>
+           </tr>
+           <tr>
+             <td><input type="text" placeholder="Given Name"></td>
+             <td><input type="text" placeholder="Last name"></td>
+           </tr>
+           <tr>
+            <td>Email</td>
+            <td>Gender</td>
+          </tr>
+          <tr>
+            <td><input type="text" placeholder="Email"></td>
+            <td>
+              <select name="OperatingSystems">
+                <option>Male</option>
+                <option>Female</option>
+              </select>
+            </td>
+          </tr>
+         </table>
+         <iframe width="760" height="500" src="https://www.youtube.com/embed/US2nfR9uT0A" 
+                 frameborder="0" 
+                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                 allowfullscreen></iframe>
+                 <img alt="image of a dog" src="https://picsum.photos/id/237/200/300" width="60" height="80">
+      </div>
+      <h1>Accessibility</h1>
+      <!-- aria attributes
+        aria-label
+          use to define an element
+        aria-labelledby
+          to correlate two tags
+        aria-describedby
+          used to locate the description for the element it was given to
+        aria-hidden
+          to hide the element that doesn't add up a value to the experience of the person who can't see the page.
+      -->
+      <h2 arial-label="Header for accessibility samples section" id="header">Accessibility Samples</h2>
+      <p aria-labelledby="header" aria-describedby="description">Usage</p>
+      <p id="description">Readable sentence to demo the accessibility attributes</p>
+      
+      <p aria-labelledby="header" aria-describedby="dogDescription">Dog</p>
+      <p aria-labelledby="header" aria-describedby="dogDescription">Cat</p>
+      <p id="dogDescription">Furry four-legged animal</p>
+      <p aria-hidden="true">Furry four-legged animal 2</p>
     </main>
     <footer>Copyright 2021 All rights reserved</footer>
   </body>

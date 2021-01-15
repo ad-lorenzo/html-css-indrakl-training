@@ -1,5 +1,8 @@
 body {
     /* background: #ccc; */
+    border: 1px #000 solid;
+    margin: 0 auto;
+    max-width: calc(80% - 100px);
 }
 
 header {
@@ -11,6 +14,7 @@ header {
 
 header > h2 {
     display: inline-block;
+    line-height: 50px;
 }
 
 header > nav {
@@ -32,4 +36,79 @@ footer {
     color: #464646;
     background-color: #ccc;
     font-size: 12px;
+}
+
+.form-controls > .form-sample > input {
+    display: block;
+}
+
+.sample-table > tr {
+    border: 1px solid #000;
+}
+
+.sample-table > td {
+    border: 1px solid #000;
+}
+
+.focus-sample:focus {
+    border: green dashed 2px;
+}
+
+
+li:nth-child(3)  {
+    color: blue;
+}
+
+li:not(.li-class) {
+    font-size: 35px;
+}
+
+.not-sample > *:not(span) {
+    font-size: 20px;
+}
+
+.only-child-sample:only-child {
+    color: red;
+    font-size: 40px;
+}
+
+.not-sample::before {
+    content: "before";
+    color: red;
+}
+
+.not-sample::after {
+    content: "after";
+    padding: 10px;
+    color: #1DA1F2;
+}
+
+.vh-vw {
+    background-color: #1DA1F2;
+    width: 50vw;
+    height: 50vh;
+}
+
+.form-sample {
+    margin: 32px;
+    border: 1px #ccc solid;
+    padding: 8px;
+}
+
+.pad-mar-div {
+    border: 2px #000 solid;
+    display: block;
+    margin: 24px 16px;
+    padding: 16px;
+    position: relative;
+}
+
+
+.pad-mar-div > .pad-mar-div-child {
+    border: #1DA1F2 2px dotted;
+    margin: 32px auto;
+    display: inline-block;
+    position: relative;
+    margin-left: 500px;
+    width: 100%;
 }

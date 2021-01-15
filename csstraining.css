@@ -1,0 +1,108 @@
+/*
+    CSS
+        semi-colon is a must
+        
+    To add css to website
+        1. <link>
+        2. <style>
+        3. inline styles
+    
+    Selectors
+        1. element selector examples p {...} table{...}
+        2. class selector example .camelCaseClass{...} .kebab-case-class{...}
+        3. id selector example #PascalCase{...}
+
+    Combining Selectors
+        1. Element + class example p.camelCaseClass
+        2. Element + id example p#PascalCase
+
+    Grouping selector
+        1. p, .camelCaseClass, #PascalCase { font-size: 20px; }
+
+    Document Tree
+        - chaining different elements that are related as parent-child-child-...
+        .class-1 > .class-2 > span { color: blue; }
+        - Adjacent selector
+            h1 + h2 { color: green; }
+    
+    Inheritance
+        - inherits 
+        - forcing the element to inherit a property
+        - to prevent inherit we can use 'revert' keyword
+
+    @import 
+        - imports another css
+    
+    Pseudo-class
+        :active - input:active { color: red; }
+        :hover - 
+        :first-child
+        :not()
+        :nth-child(4)
+        :only-child
+        :visited
+        :valid
+        :focus
+        ::before
+        ::after
+
+    color
+        hexadecimal #000 #FFF #ccc
+        text 
+        RGB
+    Units
+        px - pixels
+        em
+        rem
+        %
+        vh - view height
+        vw - view width
+
+    url
+        {
+            background: url('https://picsum.photos/id/237/200/300');
+        }
+    
+    calc
+        - calculates values for example padding, width, height and anything that's numeric value
+    
+    line-height
+        - sets a height for each line within the element with line-height property;
+    
+    padding
+        - space surrounding the element from the inside
+
+    margin
+        - space surrounding the element from the outside
+
+    display
+        - defines how the element should be shown to user
+    
+    position
+        - where you want the element to show up
+    
+    border
+        - line surrounds the element
+    
+    float 
+        - forces your element to move left or right
+
+    z-index
+        - put your element on top 
+    
+    box-sizing
+        - border-box
+            - calculates the width and height including the padding & border;
+                example
+                    width: 100px;
+                    padding: 0 24px;
+                    border: 1px #000 solid;
+                    without box-sizing: border-box;
+                        width of element will be 100 + 24(left) + 24(right) + 1 = 149px;
+                    with box-sizing: border-box;
+                        width of element will be 100px; 100px = 24px + 1px + the remaining width (75px);                     
+*/
+
+body {
+    max-width: calc(80% - 100px);
+}
